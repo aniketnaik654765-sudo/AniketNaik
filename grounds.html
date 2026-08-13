@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Football Grounds</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>⚽ FootballBook</h1>
+
+    <div class="nav">
+
+        <a href="index.html">Home</a>
+
+        <a href="grounds.html">Grounds</a>
+
+        <a href="my-bookings.html">
+            My Bookings
+        </a>
+
+        <a href="login.html">Login</a>
+
+    </div>
+
+</header>
+
+
+<section class="container">
+
+    <h1>🏟️ Available Football Grounds</h1>
+
+    <div class="ground-container">
+
+
+        <!-- Ground 1 -->
+
+        <div class="ground-card">
+
+            <div class="ground-icon">
+                ⚽
+            </div>
+
+            <h2>Green Arena</h2>
+
+            <p>📍 Madgaon, Goa</p>
+
+            <p>⚽ 5-a-side</p>
+
+            <p>🌙 Night Lighting</p>
+
+            <h3>₹800 / Hour</h3>
+
+            <button onclick="selectGround(
+                'Green Arena',
+                'Madgaon, Goa',
+                800
+            )">
+
+                Book Now
+
+            </button>
+
+        </div>
+
+
+        <!-- Ground 2 -->
+
+        <div class="ground-card">
+
+            <div class="ground-icon blue">
+                🏟️
+            </div>
+
+            <h2>Champions Turf</h2>
+
+            <p>📍 Margao, Goa</p>
+
+            <p>⚽ 7-a-side</p>
+
+            <p>💡 Flood Lights</p>
+
+            <h3>₹1000 / Hour</h3>
+
+            <button onclick="selectGround(
+                'Champions Turf',
+                'Margao, Goa',
+                1000
+            )">
+
+                Book Now
+
+            </button>
+
+        </div>
+
+
+        <!-- Ground 3 -->
+
+        <div class="ground-card">
+
+            <div class="ground-icon orange">
+                🥅
+            </div>
+
+            <h2>Victory Ground</h2>
+
+            <p>📍 Vasco, Goa</p>
+
+            <p>⚽ 5-a-side</p>
+
+            <p>🚿 Changing Room</p>
+
+            <h3>₹700 / Hour</h3>
+
+            <button onclick="selectGround(
+                'Victory Ground',
+                'Vasco, Goa',
+                700
+            )">
+
+                Book Now
+
+            </button>
+
+        </div>
+
+
+        <!-- Ground 4 -->
+
+        <div class="ground-card">
+
+            <div class="ground-icon purple">
+                🏆
+            </div>
+
+            <h2>Football Park</h2>
+
+            <p>📍 Panjim, Goa</p>
+
+            <p>⚽ 7-a-side</p>
+
+            <p>🚗 Parking Available</p>
+
+            <h3>₹1200 / Hour</h3>
+
+            <button onclick="selectGround(
+                'Football Park',
+                'Panjim, Goa',
+                1200
+            )">
+
+                Book Now
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
