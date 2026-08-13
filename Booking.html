@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Book Ground</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>⚽ FootballBook</h1>
+
+</header>
+
+
+<section class="booking-box">
+
+    <h1>📅 Book Your Ground</h1>
+
+
+    <div class="selected-ground">
+
+        <h2 id="groundName">
+            Ground
+        </h2>
+
+        <p id="groundLocation">
+            Location
+        </p>
+
+        <h3>
+            ₹<span id="groundPrice">0</span> / Hour
+        </h3>
+
+    </div>
+
+
+    <label>Your Name</label>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Enter your name"
+    >
+
+
+    <label>Phone Number</label>
+
+    <input
+        type="tel"
+        id="phone"
+        placeholder="Enter phone number"
+        maxlength="10"
+    >
+
+
+    <label>Select Date</label>
+
+    <input
+        type="date"
+        id="date"
+    >
+
+
+    <label>Select Time Slot</label>
+
+    <select id="time">
+
+        <option value="">
+            -- Select Time --
+        </option>
+
+        <option>
+            5:00 PM - 6:00 PM
+        </option>
+
+        <option>
+            6:00 PM - 7:00 PM
+        </option>
+
+        <option>
+            7:00 PM - 8:00 PM
+        </option>
+
+        <option>
+            8:00 PM - 9:00 PM
+        </option>
+
+        <option>
+            9:00 PM - 10:00 PM
+        </option>
+
+    </select>
+
+
+    <button onclick="goToPayment()">
+
+        Continue to Payment 💳
+
+    </button>
+
+</section>
+
+
+<script src="script.js"></script>
+
+<script>
+
+loadGround();
+
+</script>
+
+</body>
+</html>
