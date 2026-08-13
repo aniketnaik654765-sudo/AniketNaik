@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Payment</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="payment-box">
+
+    <h1>💳 Payment</h1>
+
+
+    <div class="summary">
+
+        <p>
+            <b>Ground:</b>
+            <span id="payGround"></span>
+        </p>
+
+        <p>
+            <b>Date:</b>
+            <span id="payDate"></span>
+        </p>
+
+        <p>
+            <b>Time:</b>
+            <span id="payTime"></span>
+        </p>
+
+        <h2>
+            Total: ₹<span id="payPrice"></span>
+        </h2>
+
+    </div>
+
+
+    <h3>Select Payment Method</h3>
+
+
+    <label>
+        <input type="radio"
+               name="payment"
+               value="UPI"
+               checked>
+
+        📱 UPI
+    </label>
+
+
+    <label>
+        <input type="radio"
+               name="payment"
+               value="Card">
+
+        💳 Card
+    </label>
+
+
+    <label>
+        <input type="radio"
+               name="payment"
+               value="Cash">
+
+        💵 Pay at Ground
+    </label>
+
+
+    <button onclick="completePayment()">
+
+        Pay & Confirm Booking
+
+    </button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+<script>
+
+loadPayment();
+
+</script>
+
+</body>
+</html>
